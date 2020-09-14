@@ -13,7 +13,7 @@ In the [AndroidManifest.xml](https://github.com/joaobiriba/QuickHandAnalyzer/blo
         android:value="handkeypoint" />
  ```
 
-In the [HandDetectorProcessor.kt](https://github.com/joaobiriba/QuickHandAnalyzer/blob/master/app/src/main/java/com/huawei/quickhandanalyzer/processor/face/HandDetectorProcessor.kt) there is the creation of the Hand Analyzer responsible to detect the hands in an image
+In the [HandDetectorProcessor.kt](https://github.com/joaobiriba/QuickHandAnalyzer/blob/master/app/src/main/java/com/huawei/quickhandanalyzer/processor/hand/HandDetectorProcessor.kt) there is the creation of the Hand Analyzer responsible to detect the hands in an image
 
 ```kotlin
         detector = MLHandKeypointAnalyzerFactory.getInstance().getHandKeypointAnalyzer(options)
@@ -45,9 +45,9 @@ From a MLHandKeypoints object You will be able to get
 
 [Hands Key Points](https://developer.huawei.com/consumer/en/doc/development/HMSCore-References-V5/mlhandkeypoint-0000001052421228-V5)
 
-Also check [HandKeypointGraphic.kt](https://github.com/joaobiriba/QuickHandAnalyzer/blob/master/app/src/main/java/com/huawei/quickhandanalyzer/graphic/face/HandKeypointGraphic.kt) for a sample to check how to display the info you want on the canvas
+Also check [HandKeypointGraphic.kt](https://github.com/joaobiriba/QuickHandAnalyzer/blob/master/app/src/main/java/com/huawei/quickhandanalyzer/graphic/hand/HandKeypointGraphic.kt) for a sample to check how to display the info you want on the canvas
 
-In the [OnSwipeTouchListener.kt](https://github.com/joaobiriba/QuickFaceAnalyzer/blob/master/app/src/main/java/com/huawei/quickhandanalyzer/utils/OnSwipeTouchListener.kt) there is the code to handle the Top to Bottom swype down gesture to change the camera
+In the [OnSwipeTouchListener.kt](https://github.com/joaobiriba/QuickHandAnalyzer/blob/master/app/src/main/java/com/huawei/quickhandanalyzer/utils/OnSwipeTouchListener.kt) there is the code to handle the Top to Bottom swype down gesture to change the camera
 ## Usage
 
 Open the project with Android Studio 4.0 and run it or alternatively use gradle directly
