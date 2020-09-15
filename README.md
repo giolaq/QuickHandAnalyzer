@@ -3,6 +3,8 @@
 This project is a sample Android Application to show the power of HMS MLKit Hand recognition feature
 integrated with Android CameraX
 
+![Demo](https://github.com/joaobiriba/QuickHandAnalyzer/blob/master/hand.gif)
+
 ## Important bits
 
 In the [AndroidManifest.xml](https://github.com/joaobiriba/QuickHandAnalyzer/blob/master/app/src/main/AndroidManifest.xml) is enabled the dependency of the hand model for HMS ML Kit with
